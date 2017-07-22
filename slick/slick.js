@@ -1182,7 +1182,7 @@
             outerEdgeLimit;
         lastSlide = _.$slides.last();
         lastLeft = lastSlide[0] ? lastSlide[0].offsetLeft * -1 : 0;
-        outerEdgeLimit = lastLeft - lastSlide.width() + this.$slider.width();
+        outerEdgeLimit = lastLeft - lastSlide.outerWidth() + this.$slider.width();
         targetLeft = Math.min(Math.max(targetLeft, outerEdgeLimit), 0);
       }
     }
